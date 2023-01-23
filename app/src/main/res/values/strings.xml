@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Fragments App</string>
+    <string name="one">One</string>
+    <string name="two">Two</string>
+    <string name="three">Three</string>
+    <string name="bottom_navigation">Bottom navigation</string>
+    <string name="navigation_drawer">Navigation drawer</string>
+    <string name="viewpager">ViewPager</string>
+    <string name="nick">Nick</string>
+    <string name="email">email@emial.com</string>
+    <string name="four">Four</string>
+    <string name="five">Five</string>
+</resources>

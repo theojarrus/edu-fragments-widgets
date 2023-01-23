@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/navigationOne"
+            android:icon="@drawable/ic_one"
+            android:title="@string/one"
+            app:showAsAction="ifRoom" />
+
+        <item
+            android:id="@+id/navigationTwo"
+            android:icon="@drawable/ic_two"
+            android:title="@string/two"
+            app:showAsAction="ifRoom" />
+
+    </group>
+
+    <group
+        android:id="@+id/grouppp"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/navigationThree"
+            android:icon="@drawable/ic_three"
+            android:title="@string/three"
+            app:showAsAction="ifRoom" />
+
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Title">
+
+            <menu>
+
+                <item
+                    android:id="@+id/navigationFour"
+                    android:icon="@drawable/ic_three"
+                    android:title="@string/four"
+                    app:showAsAction="ifRoom" />
+
+                <item
+                    android:id="@+id/navigationFive"
+                    android:icon="@drawable/ic_three"
+                    android:title="@string/five"
+                    app:showAsAction="ifRoom" />
+
+
+            </menu>
+
+        </item>
+
+    </group>
+
+</menu>
