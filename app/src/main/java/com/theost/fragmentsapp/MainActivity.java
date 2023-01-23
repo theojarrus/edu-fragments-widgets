@@ -8,7 +8,7 @@ import android.view.View;
 
 import com.theost.fragmentsapp.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements NavigationHolder {
 
     private ActivityMainBinding binding;
 
@@ -20,5 +20,9 @@ public class MainActivity extends AppCompatActivity {
         binding.openNavigationBottom.setOnClickListener(view -> startActivity(NavigationBottomActivity.newIntent(this)));
         binding.openNavigationDrawer.setOnClickListener(view -> startActivity(NavigationDrawerActivity.newIntent(this)));
         binding.openViewPager.setOnClickListener(view -> startActivity(NavigationViewPagerActivity.newIntent(this)));
+    }
+
+    public void doSomething(String text) {
+        System.out.println(text);
     }
 }
