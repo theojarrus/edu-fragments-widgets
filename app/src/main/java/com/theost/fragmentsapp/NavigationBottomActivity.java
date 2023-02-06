@@ -15,7 +15,7 @@ import androidx.fragment.app.Fragment;
 import com.google.android.material.navigation.NavigationBarView;
 import com.theost.fragmentsapp.databinding.ActivityNavigationBottomBinding;
 
-public class NavigationBottomActivity extends AppCompatActivity {
+public class NavigationBottomActivity extends AppCompatActivity implements NavigationHolder {
 
     private ActivityNavigationBottomBinding binding;
 
@@ -64,5 +64,9 @@ public class NavigationBottomActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.fragmentContainer, fragment, null)
                 .commit();
+    }
+
+    public void doSomething(String text) {
+        System.out.println(text);
     }
 }
